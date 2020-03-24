@@ -12,8 +12,14 @@
 	content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+@import
+	url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap')
+	;
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap')
+	;
+
 .img-circle {
 	width: 180px;
 	height: 180px;
@@ -25,6 +31,10 @@ h1, h2, h3 {
 	font-family: 'Noto Sans KR', sans-serif;
 }
 
+.relative-img {
+	max-width: 100%;
+	height: auto;
+}
 </style>
 <script src="js/jquery-3.4.1.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
@@ -71,13 +81,10 @@ h1, h2, h3 {
 						<header class="major">
 							<h2>Who Am I?</h2>
 						</header>
-						<h3>
-							Do It Yourself :-) </h3>
-							<p>
-							몸으로 부딪히며 배우는 것을 즐기는 개발자, 이예지입니다.<br> 
-							name: Lee Ye Ji<br>
-							birth: 1997.11.23<br>
-							major: WEB/APP Developer<br>
+						<h3>Do It Yourself :-)</h3>
+						<p>
+							몸으로 부딪히며 배우는 것을 즐기는 개발자, 이예지입니다.<br> name: Lee Ye Ji<br>
+							birth: 1997.11.23<br> major: WEB/APP Developer<br>
 							phone: 010-5695-2419<br>
 						</p>
 						<ul class="actions">
@@ -94,7 +101,8 @@ h1, h2, h3 {
 				<header class="major">
 					<h2>Experience</h2>
 				</header>
-				<img src="images/experience.png">
+				<img class="relative-img" src="images/experience.png" width="550"
+					height="800">
 			</section>
 
 			<!-- Projects Section -->
@@ -110,9 +118,11 @@ h1, h2, h3 {
 						</h3>
 						<h5>
 							전주시 여행객을 위한 맞춤 여행일정 추천 애플리케이션 <br>
-						</h5> <br> <a
-							href="https://play.google.com/store/apps/details?id=org.androidtown.jeonjuro2019"
-							class="button" target="_blank"> Download Now </a></li>
+						</h5> <br> <img src="images/google.png" width="130" height="45"
+						onclick="javascript:newin=window.open('about:blank'); 
+						newin.location.href='https://play.google.com/store/apps/details?id=org.androidtown.jeonjuro2019';"></li>
+
+					<!-- 시나브로 -->
 					<li><img class="img-circle" src="images/icon.png">
 						<h5>
 							다이어리 애플리케이션<br>
@@ -120,9 +130,10 @@ h1, h2, h3 {
 						<h3>
 							<b>"시나브로"</b>
 						</h3>
-						<h5>그날의 감정을 기록하며 힐링하는 다이어리 애플리케이션</h5> <br>
-					<a href="https://github.com/yagee97/Android_APP-Sinabro-"
-							class="button" target="_blank"> GitHub </a></li>
+						<h5>그날의 감정을 기록하며 힐링하는 다이어리 애플리케이션</h5> <br> 
+						<img src="images/github.png" width="45" height="45"
+						onclick="javascript:newin=window.open('about:blank'); 
+						newin.location.href='https://github.com/yagee97/Android_APP-Sinabro-';"><div><b>github</b></div></li>
 					<li><span class="icon major style5 fa-gem"></span>
 						<h3>Dolor nullam</h3>
 						<p>Sed lorem amet ipsum dolor et amet nullam consequat a
